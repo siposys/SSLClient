@@ -15,7 +15,7 @@ public class SSLClient {
             SSLSocketFactory factory =
                 (SSLSocketFactory)SSLSocketFactory.getDefault();
             SSLSocket socket =
-                (SSLSocket)factory.createSocket("www.verisign.com", 443);
+                (SSLSocket)factory.createSocket("127.0.0.1", 4443);
 
             /*
              * send http request
