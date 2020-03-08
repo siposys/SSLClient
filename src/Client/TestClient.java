@@ -1,3 +1,4 @@
+package Client;
 //package to.noc.sslping;
 
 import javax.net.ssl.SSLParameters;
@@ -27,9 +28,9 @@ public class TestClient {
 
             // Hostname verification is not done by default in Java with raw SSL connections.
             // The next 3 lines enable it.
-            SSLParameters sslParams = new SSLParameters();
-            sslParams.setEndpointIdentificationAlgorithm("HTTPS");
-            sslsocket.setSSLParameters(sslParams);
+           // SSLParameters sslParams = new SSLParameters();
+           // sslParams.setEndpointIdentificationAlgorithm("HTTPS");
+            //sslsocket.setSSLParameters(sslParams);
 
             // we only send 1 byte, so don't buffer
             sslsocket.setTcpNoDelay(true);
